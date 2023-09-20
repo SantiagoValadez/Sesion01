@@ -6,7 +6,6 @@ p {
     margin: 16px 10px 16px 10px;
 }
 
-.marginAuto .center {
-    width: fit-content; 
-    margin: 0 auto;
+.container {
+    background-color: rgb(51, 109, 150);
 }
