@@ -9,6 +9,7 @@ p {
 
 .container {
     background-color: rgb(51, 109, 150);
+    margin: 50px 200px 50px 200px;
     height: 400px;
     display: grid;
     place-items: center;
