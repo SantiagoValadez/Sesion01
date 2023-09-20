@@ -8,4 +8,7 @@ p {
 
 .container {
     background-color: rgb(51, 109, 150);
+    height: 600px;
+    display: grid;
+    place-items: center;
 }
