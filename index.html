@@ -3,10 +3,17 @@
 <head>
     <title>SESION01</title>
     <link rel="stylesheet" href="estilos/miweb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1 class="color">Propiedad de color</h1>
+    <section class="center">
+        <p>HOLA MUNDO!</p>
+    </section>
     <div class="container">
-        <div clas="box"><h1>Building a Blog.</h1>
+        <div class="box"><h1>Building a Blog</h1>
             <p>Click on the button!</p>
             <form>
                 <input type="email"/>
@@ -16,5 +23,81 @@
             </form>
         </div>
     </div>
+    <article id="fondo">
+        Soy una propiedad de background
+    </article>
+    <div class="margen">
+        Trabajando con margenes
+    </div>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim incidunt officia quas dolor ipsum dicta, rerum numquam at temporibus hic possimus libero cumque corrupti laborum inventore similique nam maiores.</p>
+        <h2>soy un subtitulo</h2>
+        <h3>soy un subsubtitulo</h3>
+    </div>
+    <article class="texto1">
+        ESTO ES UN TEXTO
+    </article>
+    <a target="_blank" href="http://www.google.co.nz">ESTO ES UN LINK!</a> <!-- con target=_blanck podemos abrir un vinculo a la par que se sigue manteniendo abierta la pestaña en  la que nos encontrabamos previamente-->
+    <ul>
+        <li>Uno Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus aspernatur quos, sequi quidem iure doloremque distinctio! Neque perspiciatis, inventore quasi mollitia temporibus saepe autem cum, placeat, eius rerum vel?</li>
+        <li>Dos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, nemo! Totam, libero sequi excepturi laboriosam cum soluta adipisci pariatur laudantium quis cumque. Laboriosam, dolores quidem. Facilis molestiae doloribus maiores ipsum.</li>
+        <li>Tres Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates hic perspiciatis dolorum optio et quos ea consequuntur. Soluta optio rem provident, dolor accusamus explicabo tempore asperiores! Laboriosam ex nesciunt ipsum.</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Santiago</td>
+            <td>Valadez</td>
+        </tr>
+        <tr>
+            <td>Puerquito</td>
+            <td>Feliz</td>
+        </tr>
+        <tr>
+            <td>Daniela</td>
+            <td>Giselle</td>
+        </tr>
+    </table>
+    <div class="inline">lol</div>
+    <div class="inline">lolol</div>
+    <span>span 1</span>
+    <span>span 2</span>
+    <article id="position">Soy una propiedad de posición</article>
+    <div class="container1">
+        <div class="container1">
+            <article class="colum right">1</article>
+            <article class="colum right">2</article>
+            <article class="colum right">3</article>
+        </div>
+        <!--<div class="container1">
+            <article class="card right">1</article>
+            <article class="card right">2</article>
+            <article class="card right">3</article>
+        </div>-->
+        <img src="coffee1.png" class="left">
+        <!--<div class="left">Izquierda</div>-->
+        <div class="right">Derecha</div>
+    </div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block2</div>
+    <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="inserte aqui el nombre">
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="inserte aqui el Apellido">
+        <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario"  name="comentario"></textarea>
+        <!--placeholder sirve para poner una leyenda con letras opacas en la caja en la que se ingresara el texto-->
+        <!--rows se refiere al numero de lineas que tendra la caja para que ingresemos nuestro texto en el-->
+        <!--con la propiedad type, podemos hacer que la caja de texto tenga varias funciones con las que podamos interactuar-->
+        <!--"cols" hace referencia a las colomnas, lo que en este ejemoplo de unacaja de comen tarios, lo que nos especifica, es el ancho que tendra nuestra caja de comentarios-->
+        <br>
+        <input type="submit"/>
+    </form>
 </body>
 </html>
+<!--La etiqueta <hr> nos sirve para separar el texto o secciones de nuestros elementos de html-->

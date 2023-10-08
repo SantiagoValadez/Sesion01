@@ -5,17 +5,37 @@ h1 {
 }
 
 p {
-    margin: 16px 10px 16px 10px;
+    margin: 3px 10px 3px 10px;
     display: grid;
     place-items: center;
 }
 
 .container {
+    display: grid;
+    place-items: center;
+}
+
+.box{
     background-color: rgb(51, 109, 150);
-    border-bottom-color:rgb(104, 102, 109);
-    margin: 50px 20px 50px 20px;
+    margin: 20px 50px 20px 50px;
     height: 400px;
+    width: 600px;
     padding: 10px 0px 10px 0px;
+    border: 5px black solid;
+    border-radius: 20px;
+    border-width: 10px;
+    /* 
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    none
+    outset
+    hidden
+    */
     display: grid;
     place-items: center;
 }
@@ -28,4 +48,148 @@ p {
 #button {
     display: grid;
     place-items: center;
+}
+
+div p {
+    color:aquamarine;
+}
+
+div h2, div h3 {
+    color: rgb(156, 22, 22);
+}
+
+/* esto es un comentario */
+
+.color {
+    color: #000
+}
+
+#fondo {
+    /*background-color: rgb(255,0,0);
+    background-image: url('coffee1.png');
+    height: 200px;
+    background-size: 100px 100px ;
+    background-repeat: repeat-y;
+    background-position: center top;*/
+    height: 200px;
+    background: #f00 url(coffee1.png) repeat-y center bottom / 100px 100px; 
+    /*background-size: 100px 100px;*/ /*tambien se puede inidicar las medidas de la imagen desde "background"*/
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 25px 20px 15px;
+    border: solid 5px black;
+    height: 100px;
+    width: 30px;
+    overflow: scroll; /*usanmos "hidden" para que el contenido que este dentro del "model-box" no se vea*/
+    outline: solid 5px red;
+}
+
+.texto1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(53, 79, 133);
+    text-decoration: underline;
+    text-shadow: 3px 5px 3px gray;
+
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: rgb(104, 230, 159);
+}
+
+a:hover {
+    color: gray;
+}
+
+a:active {
+    color:red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: circle; /*none;*/ /*desaparece las viñetas de las listas*/
+    /*padding-left: 0;*/
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse ;
+}
+th,td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+th{
+    background-color: tomato;
+    color: white;
+}
+tr:nth-child(even){/*lo qye hace es intercalar el color de las celdas, para que este sea un poco mas comodo de observar*/
+    background-color: #eee;
+}
+tr:hover {
+    background-color: gray;
+    cursor: pointer;/*hace que aparezca la manita sobre el obejeto que estamos pasando el mouse*/
+}
+span {
+    display: block;/*lo que hacen las etiquetas span, normalmente es escribir el texto en la misma linea al lado del otro, pero como tinen la propiedad "display:block;" lo que pasa es que se fuerza un salto de linea*/
+    /*display:none; sirve para ocultar los elementos*/
+    /*visivility:hidden; es otra manera en la que se pueden ocultar los elementos en pantalla*/
+    max-width: 300px; /* la propiedad "max-widht" sirve de tal manera que poedemos introudcir un ancho maxico, pero si deseamos disminuir el ancho de nuestra pagina, este elemento con la propuedad "max-widht" se ajustara*/
+    background-color: #3f7fc4;
+}
+.inline {
+    display: inline;/*cuando se agrega una etiqueta <div> esta ocupa el 100% del ancho de una linea, lo que indica que lo que se escriba posteriormente se presentara por debajo, pero al usar la propuedad "display:inline;" sucede que se fuerza a que lo que se haya escrirto dentro de las etiquetas, se coloquen una al lado de otra*/
+}
+#position { /* #este es el signo para la seleccion de "id"*/
+    /*position: static; valor por defecto con el que vienen todos los elementos de html"*/
+    /*position: fixed; lo que hace fixed es que el elemento con el que estemos trabajando se movera junto con todos los elemetos que esten en pantalla, cuando usemos el scroll para ver la pagina web"*/
+    /*position; absolute: lo que hace esta propiedad es que los elemntos se acomoden lo mas cerca posible a la etique "padre" al no haber una, este se posicionara en la etiqueta "body" simplemente*/
+    /*position: sticky; esta propiedad, es una mezcla entre la propiedad "relative" y "fixed" lo que para cundo se interactue con una pagina, es que el elemento buscara un lugar donde posicionarse, pero cuando se use el scroll, dicho elemento tambien se movera*/
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.left {
+    float: left;
+    width: 100px;
+}
+.right {
+    float: right;
+}
+.container1 {
+    height: 200px;
+}
+
+.colum {
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.33%;
+}
+/*.card {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.33%; /* a cada tarjeta en la pantalla, se la da un espacio del 33.33%*/
+/*}*/
+
+.inline-block {
+    display: inline-block; /* inlineblock se usan sobre todo cuando el objetivo es hacer menus de navegacion*/
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
 }
