@@ -38,11 +38,24 @@
         ESTO ES UN TEXTO
     </article>
     <a target="_blank" href="http://www.google.co.nz">ESTO ES UN LINK!</a> <!-- con target=_blanck podemos abrir un vinculo a la par que se sigue manteniendo abierta la pestaña en  la que nos encontrabamos previamente-->
+    <!--La etiqueta <ul> se refiere a una lista no ordenada-->
     <ul>
         <li>Uno Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus aspernatur quos, sequi quidem iure doloremque distinctio! Neque perspiciatis, inventore quasi mollitia temporibus saepe autem cum, placeat, eius rerum vel?</li>
         <li>Dos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, nemo! Totam, libero sequi excepturi laboriosam cum soluta adipisci pariatur laudantium quis cumque. Laboriosam, dolores quidem. Facilis molestiae doloribus maiores ipsum.</li>
         <li>Tres Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates hic perspiciatis dolorum optio et quos ea consequuntur. Soluta optio rem provident, dolor accusamus explicabo tempore asperiores! Laboriosam ex nesciunt ipsum.</li>
     </ul>
+    <!--La etiqueta <ol> se refiere una lista ordenada -->
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <ol id="subelements"> <!--En este apartado, se realizo el cambio de la especificacion del orden una lista ordenada-->
+                <li>sub elemento 1</lo>
+                <li>sub elemento 2</lo>
+                <li>sub elemento 3</lo>
+            </ol>
+        </ol>
     <table>
         <tr>
             <th>Nombre</th>
@@ -85,7 +98,7 @@
     <div class="inline-block">inline-block2</div>
     <form action="" method="post">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="inserte aqui el nombre">
+        <input type="text" id="nombre" name="nombre" placeholder="inserte aqui el nombre"> <!--con value="Ejemplo" se puede añadir un valor por defecto dentro de nuestros cuadros de texto para ingresar los inputs-->
         <br>
         <label for="Apellido">Apellido</label>
         <input type="text" id="Apellido" name="Apellido" placeholder="inserte aqui el Apellido">
@@ -96,8 +109,35 @@
         <!--con la propiedad type, podemos hacer que la caja de texto tenga varias funciones con las que podamos interactuar-->
         <!--"cols" hace referencia a las colomnas, lo que en este ejemoplo de unacaja de comen tarios, lo que nos especifica, es el ancho que tendra nuestra caja de comentarios-->
         <br>
-        <input type="submit"/>
+        <input type="submit"/> <!--El boton summit, no es tan personalizable como la etiqueta <button>-->
+            <button type="button">Enviar</button>
+            <button type="reset">reset</button>
     </form>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptatem eaque est atque, qui vel consectetur, itaque, tenetur autem iste rem cum voluptatibus placeat! Odio velit minima perspiciatis vel ipsum?</p>
+    <br>
+    <br>
+    <table class="tabla1">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gansito</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Pintgüino</td>
+                <td>$20.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total $20.00</td>
+        </tfoot>
+    </table>
 </body>
 </html>
 <!--La etiqueta <hr> nos sirve para separar el texto o secciones de nuestros elementos de html-->

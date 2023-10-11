@@ -193,3 +193,12 @@ span {
     margin: 0 auto;
     background-color: aqua;
 }
+
+#subelements {
+    list-style-type: lower-alpha; /* de esta manera se le cambia la especificacion del orden en las listas ordenadas*/
+}
+
+.tabla1, th, td {
+    border: 1px solid black;
+    width: 400 px;
+}
